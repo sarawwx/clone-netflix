@@ -3,6 +3,7 @@
     --preto: #141414;
 }
 
+/* a base */
 * {
     margin: 0;
     padding: 0;
@@ -20,21 +21,18 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
-
 header .logo {
     margin-left: 5px;
     color: var(--vermelho);
     font-family: 'Arial Black';
     font-size: 40px;
 }
-
 header nav a {
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
     text-transform: uppercase;
 }
-
 header nav a:hover {
     color: #fff;
 }
@@ -53,7 +51,7 @@ header nav a:hover {
     align-items: flex-start;
 }
 
-.filme-principal .descricao{
+.descricao{
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -76,12 +74,24 @@ header nav a:hover {
     cursor: pointer;
     transition: .3s ease all;
 }
-
 .botao:hover{
     background-color: white;
     color: black;
 }
-
 .botao i{
     margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
