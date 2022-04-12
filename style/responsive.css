@@ -1,27 +1,29 @@
 @media screen and (max-width:700px) {
-    header .container, .container-header{
+
+    header .container,
+    .container-header {
         display: flex;
         flex-direction: column;
     }
 
 
-    .container-header{
+    .container-header {
         margin: 0;
         height: 90px;
     }
 
-    .botao{
+    .botao {
         margin-top: 6px;
         width: 300px;
     }
 
-    .filme-principal{
+    .filme-principal {
         height: 500px;
     }
 }
 
 @media screen and (max-width:430px) {
-    nav.nav-header{
+    nav.nav-header {
         display: flex;
         flex-direction: row;
         font-size: 15px;
@@ -31,8 +33,7 @@
 }
 
 @media screen and (min-width:1000px) {
-    .descricao{
+    .descricao {
         width: 50%;
     }
 }
-

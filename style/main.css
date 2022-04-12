@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@300&display=swap');
+
+
 /* paleta de cores */
 :root {
     --roxo: #3F51B5;
@@ -14,7 +18,7 @@
 
 body {
     background: var(--preto);
-    font-family: 'Arial', Times, serif;
+    font-family: 'Anek Bangla', sans-serif;
     color: white;
 }
 
@@ -23,13 +27,15 @@ header .container-header {
     align-items: center;
     justify-content: space-between;
 }
+
 header .logo {
     color: var(--roxo);
-    font-family: 'Arial Black';
+    font-family: 'Bebas Neue';
     font-size: 40px;
     cursor: pointer;
 }
-header .logo:hover{
+
+header .logo:hover {
     color: var(--amarelo);
 }
 
@@ -39,6 +45,7 @@ header .nav-header a {
     color: #AAA;
     margin-right: 10px;
 }
+
 header .nav-header a:hover {
     color: var(--amarelo);
 }
@@ -49,7 +56,7 @@ header .nav-header a:hover {
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/img/redd.jpg');
 
     height: 400px;
-    background-size:cover;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -57,19 +64,19 @@ header .nav-header a:hover {
     align-items: flex-start;
 }
 
-.descricao{
+.descricao {
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.titulo{
+.titulo {
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.botao{
-    background-color: rgba(0,0,0,.50);
+.botao {
+    background-color: rgba(0, 0, 0, .50);
     border: none;
     color: white;
 
@@ -80,27 +87,31 @@ header .nav-header a:hover {
     cursor: pointer;
     transition: .3s ease all;
 }
-.botao:hover{
+
+.botao:hover {
     background-color: white;
     color: rgb(0, 0, 0);
 }
-.botao i{
+
+.botao i {
     margin-right: 8px;
 }
 
-.container-header, .container{
+.container-header,
+.container {
     margin-left: 20px;
 }
-.filme-principal .container{
+
+.filme-principal .container {
     width: 70%;
 }
 
-.box-filme{
+.box-filme {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carousel-filmes{
+.carousel-filmes {
     margin-top: 5px;
 }
