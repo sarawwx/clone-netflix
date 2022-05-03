@@ -107,11 +107,19 @@ header .nav-header a:hover {
 }
 
 .box-filme {
-    height: 100%;
+    height: 330px;
     width: 100%;
     display: block;
 }
 
-.carousel-filmes {
+.filme-principal {
+    height: 600px;
+}
+
+.carousel-filmes-1 {
     margin-top: 5px;
+}
+
+.carousel-filmes-2 {
+    margin-top: 20px;
 }
