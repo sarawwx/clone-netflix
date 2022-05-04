@@ -1,15 +1,26 @@
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width:700px) {
+    header .logo{
+        font-size: 55px;
+    }
 
     header .container,
     .container-header {
         display: flex;
         flex-direction: column;
     }
-
-
-    .container-header {
+    .a-header{
+        font-size: 20px;
+    }
+    
+    header .container-header {
         margin: 0;
-        height: 90px;
+        height: 110px;
     }
 
     .botao {
@@ -18,22 +29,22 @@
     }
 
     .filme-principal {
-        height: 500px;
+        height: 800px;
+    }
+    .descricao{
+        font-size: 25px;
     }
 }
 
-@media screen and (max-width:430px) {
+@media screen and (max-width:500px) {
+    /* .box-filme{
+        height: fit-content;
+    } */
+
     nav.nav-header {
         display: flex;
         flex-direction: row;
         font-size: 15px;
         margin-left: 10px;
-    }
-
-}
-
-@media screen and (min-width:1000px) {
-    .descricao {
-        width: 50%;
     }
 }
