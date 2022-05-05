@@ -6,16 +6,16 @@
 :root {
     --roxo: #3F51B5;
     --preto: #141414;
-    --amarelo: #FFC10A;
+    --amarelo: rgba(247, 217, 47, 0.733);
 }
 
-/* a base */
+
+/* BASE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background: var(--preto);
     font-family: 'Anek Bangla', sans-serif;
@@ -28,30 +28,27 @@ header .container-header {
     justify-content: space-between;
     height: 80px;
 }
-
 header .logo {
     color: var(--roxo);
     font-family: 'Bebas Neue';
     font-size: 50px;
     cursor: pointer;
 }
-
 header .logo:hover {
     color: var(--amarelo);
 }
-
 header .nav-header a {
     text-decoration: none;
     text-transform: uppercase;
     color: #AAA;
     margin-right: 20px;
 }
-
 header .nav-header a:hover {
     color: var(--amarelo);
 }
 
-/* filme principal */
+
+/* FILME PRINCIPAL */
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('/img/red.jpg');
@@ -65,35 +62,41 @@ header .nav-header a:hover {
     align-items: flex-start;
 }
 
+.title,
+.name-movie {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.title{
+    color:rgba(247, 217, 47, 0.5);
+    font-size: 40px;
+    margin-bottom: 8%;
+    text-transform: uppercase;
+}
+
+.name-movie{
+    font-size: 30px;
+}
 .descricao {
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 40px;
 }
 
-.titulo {
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-}
-
-.botao {
-    background-color: rgba(0, 0, 0, .50);
+.botao-principal{
+    background-color: rgba(247, 217, 47, 0.5);
     border: none;
-    color: white;
+    border-radius: 5px;
+    color: var(--preto);
 
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 15px;
+    font-weight: bold;
 
     cursor: pointer;
     transition: .3s ease all;
 }
-.botao:hover {
-    background-color: white;
-    color: rgb(0, 0, 0);
-}
-.botao i {
+.botao-principal i {
     margin-right: 8px;
 }
 
@@ -101,49 +104,47 @@ header .nav-header a:hover {
 .container {
     margin-left: 20px;
 }
-.filme-principal .container {
+.container {
     width: 70%;
 }
 
-.box-filme {
-    height: 330px;
+.filme-principal{
     width: 100%;
-    display: block;
-}
-
-.filme-principal {
     height: 600px;
 }
 
+
 /* CAROUSEL MOVIES */
-.carousel-movies{
+.carousel-movies {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 100vh;
+    justify-content: space-around;
 }
 
-.box-movie{
+.box-movie {
     max-width: 100%;
+    height: 250px;
     display: block;
 }
 
-.ui-card{
-    width: 200px;
+.ui-card {
+    width: 150px;
     background: radial-gradient(#111 50%, #000 100%);
     overflow: hidden;
     position: relative;
 }
-.ui-card .box-movie{
+.ui-card,
+.box-movie {
     transform: scale(1.3);
     transition: all 0.3s ease-out;
 }
-.ui-card:hover .box-movie{
+.ui-card:hover 
+.box-movie {
     transform: scale(1.1) translateY(-20px);
     opacity: 0.3;
 }
 
-.description{
+.description {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -153,54 +154,39 @@ header .nav-header a:hover {
     color: white;
     font-size: 18px;
 }
-.description h3{
-    font-weight: 700;
-    font-size:32px;
-    margin: 0 0 20px;
+.description 
+.sinopse {
     transform: translateY(30px);
     opacity: 0;
     transition: all 0.3s ease-out;
+    font-size: 12px;
 }
-.description p{
+
+.botao{
+    background: var(--amarelo);
+    color: var(--roxo);
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
     transform: translateY(30px);
     opacity: 0;
     transition: all 0.3s ease-out 0.2s;
 }
-.description a{
-    color:var(--roxo);
-    background: var(--amarelo);
-    display: inline-block;
-    padding: 10px;
-    margin-top: 6px;
-    text-decoration: none;
-    border-radius: 5px;
-    transform: translateY(30px);
-    opacity: 0;
-    transition: all 0.3s ease-out 0.4s;
+.botao:hover {
+    background: var(--roxo);
+    color: var(--amarelo);
 }
-.description a:hover{
-    background: #926f04;
-}
-
-.ui-card:hover .description h3{
-    transform: translateY(0);
-    opacity: 1;
-}
-.ui-card:hover .description p{
-    transform: translateY(0);
-    opacity: 1;
-}
-.ui-card:hover .description a{
+.ui-card:hover .botao{
     transform: translateY(0);
     opacity: 1;
 }
 
-
-
-
-/* .carousel-filmes-1 {
-    margin-top: 5px;
+.ui-card:hover 
+.description 
+.sinopse {
+    transform: translateY(0);
+    opacity: 1;
 }
-.carousel-filmes-2 {
-    margin-top: 20px;
-} */
