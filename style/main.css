@@ -99,6 +99,10 @@ header .nav-header a:hover {
 .botao-principal i {
     margin-right: 8px;
 }
+.botao-principal:hover{
+    background: var(--roxo);
+}
+
 
 .container-header,
 .container {
@@ -119,16 +123,18 @@ header .nav-header a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 
 .box-movie {
-    max-width: 100%;
+    max-width: 150px;
     height: 250px;
     display: block;
 }
 
 .ui-card {
     width: 150px;
+    height: 100%;
     background: radial-gradient(#111 50%, #000 100%);
     overflow: hidden;
     position: relative;
@@ -152,21 +158,23 @@ header .nav-header a:hover {
     padding: 15px;
     text-align: center;
     color: white;
-    font-size: 18px;
 }
 .description 
 .sinopse {
     transform: translateY(30px);
     opacity: 0;
     transition: all 0.3s ease-out;
-    font-size: 12px;
+}
+.sinopse{
+    font-size: 10px;
+    width: 120px;
 }
 
 .botao{
     background: var(--amarelo);
     color: var(--roxo);
     padding: 8px;
-    margin-top: 10px;
+    margin-top: 5px;
     border: none;
     border-radius: 5px;
     font-size: 11px;
@@ -189,4 +197,17 @@ header .nav-header a:hover {
 .sinopse {
     transform: translateY(0);
     opacity: 1;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;               
+}
+::-webkit-scrollbar-track {
+    background: var(--amarelo);     
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--roxo);  
+    border-radius: 20px;    
 }
