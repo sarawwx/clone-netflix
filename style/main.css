@@ -133,7 +133,7 @@ header .nav-header a:hover {
 }
 
 .ui-card {
-    width: 150px;
+    width: 140px;
     height: 100%;
     background: radial-gradient(#111 50%, #000 100%);
     overflow: hidden;
@@ -205,12 +205,12 @@ header .nav-header a:hover {
 
 /* scrollbar */
 ::-webkit-scrollbar {
-    width: 15px;               
+    width: 10px;               
 }
 ::-webkit-scrollbar-track {
     background: var(--amarelo);     
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--roxo);  
-    border-radius: 20px;    
+    border-radius: 30px;    
 }
