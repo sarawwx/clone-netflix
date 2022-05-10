@@ -146,7 +146,7 @@ header .nav-header a:hover {
 }
 .ui-card:hover 
 .box-movie {
-    transform: scale(1.1) translateY(-20px);
+    transform: scale(1.1) translateY(-10px);
     opacity: 0.3;
 }
 
