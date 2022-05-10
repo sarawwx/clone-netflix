@@ -28,24 +28,20 @@
         display: flex;
         flex-direction: column;
     }
+    .a-header{
+        font-size: 20px;
+    }
     
     .filme-principal {
         height: 800px;
     }
     .botao-principal {
         margin-top: 6px;
-        width: 250px;
+        width: 210px;
     }
 
-    .row{
-        padding: 0;
-        flex-direction: column;
-        width: 250px;
-        justify-content: center;
-    }
-    img.box-movie{
-        display: none;
-        max-width: none;
+    div.ui-card{
+        max-width: 500px;
     }
 
     .botao:active {
