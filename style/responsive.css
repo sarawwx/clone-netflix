@@ -21,6 +21,7 @@
 @media screen and (max-width:700px) {
     header .logo{
         font-size: 55px;
+        margin-top: 5px;
     }
     header .container,
     .container-header {
@@ -31,32 +32,34 @@
         font-size: 20px;
     }
     
-    header .container-header {
-        margin: 0;
-        height: 110px;
+    .filme-principal {
+        height: 800px;
     }
-
     .botao-principal {
         margin-top: 6px;
         width: 250px;
     }
 
-    .filme-principal {
-        height: 800px;
-    }
     .description{
         font-size: 25px;
     }
-}
 
-@media screen and (max-width:500px) {
-    nav.nav-header {
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        margin-left: 10px;
+    .botao:active {
+        background: var(--roxo);
+        color: var(--amarelo);
+    }
+    .ui-card:active .botao{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .ui-card:active 
+    .description 
+    .sinopse {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
+
 
 @media screen and (max-width:550px) {
     .carousel-movies{   
@@ -78,3 +81,23 @@
         padding: 10px;
     } 
 }
+
+
+/* @media screen and (max-width:500px) {
+    .nav-header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 12px;
+        margin: 2%;
+    }
+    header .container-header {
+        margin: 0;
+        height: 150px;
+    }
+    header .nav-header a{
+        margin: 0;
+        padding: 2px;
+    }
+    
+} */
